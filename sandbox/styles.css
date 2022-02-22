@@ -1,0 +1,76 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    background-color: bisque;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p {
+    color: brown;
+}
+
+.general-text {
+    color: dodgerblue;
+}
+
+#specific-text {
+    color: indianred
+}
+
+.containers {
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 600;
+    margin: 50px 0px;
+    background-color: sandybrown;
+}
+
+.surrounding-div {
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+}
+
+#position-div {
+    position: sticky; 
+    /* relative=relative to where this would have been in the code.
+    fixed=from the top left corner of the page. 
+    absolute=same as relative, except removes this element from its surrounding code, so that the surrounding code pretends it is not there anymore. Parent needs to have a position to execute properly.
+    sticky=element will stick to last position on page as you scroll away*/
+    top: 10px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+}
+
+#content-box {
+    /* content box sizing pushes outward. Sizing limits outside of border*/
+    box-sizing: content-box;
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    padding: 10px;
+    border: solid 5px;
+}
+
+#border-box {
+    /* border box sizing pushes inward. Sizing limits to the border */
+    box-sizing: border-box;
+    background-color: mediumseagreen;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    padding: 10px;
+}
